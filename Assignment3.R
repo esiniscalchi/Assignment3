@@ -85,3 +85,8 @@ mean(C)
 ggplot(results.df)
 ggplot
 function (data = NULL, mapping = aes(), …, environment = parent.frame()) { UseMethod(“ggplot”) } <environment: namespace:ggplot2>
+
+r=rowMeans(results.df[,2:3])
+r.df=data.frame(Name,r)
+mean(as.matrix(results.df[,2:3]))
+[1] 25.64286
